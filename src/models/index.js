@@ -9,7 +9,7 @@ let sequelizeOptions =
     process.env.NODE_ENV === "production"
         ? {
               dialectOptions: {
-                  ssl: false,
+                  ssl: { require: true, rejectUnauthorized: false },
               },
           }
         : {};
