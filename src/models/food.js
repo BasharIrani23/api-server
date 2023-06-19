@@ -11,3 +11,5 @@ const food = (sequelize, DataTypes) =>
     });
 
 module.exports = food;
+ 
+
