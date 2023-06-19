@@ -1,7 +1,9 @@
 # api-server
-(broken deploy-link)[https://api-server-rre5.onrender.com/]
 
-(PR)[https://github.com/BasharIrani23/api-server/pull/1]
+[broken deploy-link](https://api-server-rre5.onrender.com/)
+
+
+[PR](https://github.com/BasharIrani23/api-server/pull/1)
 
 ![image from local host](https://github.com/BasharIrani23/api-server/assets/129655131/bb4e0a34-4360-4713-afe2-d77819d2fbfa)
 
