@@ -1,9 +1,11 @@
 "use strict";
-
+require("dotenv").config();
 const { Sequelize, DataTypes } = require("sequelize");
 
-const DB_URL =
-    process.env.NODE_ENV === "test" ? "sqlite:memory:" : process.env.DB_URI;
+const DB_URI =
+    process.env.NODE_ENV === "test" ? "sqlite:memory:" : process.env.DB_URL;
+
+console.log("DB_URI:", process.env.DB_URI);
 
 let sequelizeOptions =
     process.env.NODE_ENV === "production"
@@ -14,7 +16,7 @@ let sequelizeOptions =
           }
         : {};
 
-let sequelize = new Sequelize(DB_URL, sequelizeOptions);
+let sequelize = new Sequelize(DB_URI, sequelizeOptions);
 
 const clothes = require("./clothes");
 const food = require("./food");

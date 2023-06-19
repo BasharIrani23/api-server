@@ -5,6 +5,7 @@ const cors = require("cors");
 const pageNotFound = require("./error-handlers/404");
 const serverError = require("./error-handlers/500");
 const foodRouter = require("./routes/food");
+require("dotenv").config();
 
 const clothesRouter = require("./routes/clothes");
 
