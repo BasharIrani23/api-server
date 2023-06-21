@@ -13,7 +13,7 @@ const clothes = (sequelize, DataTypes) =>
             type: DataTypes.STRING,
         },
         origin: {
-            type: DataTypes.STRING, 
+            type: DataTypes.STRING,
         },
     });
 
