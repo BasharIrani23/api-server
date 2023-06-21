@@ -1,5 +1,3 @@
-"use strict";
-
 const songs = (sequelize, DataTypes) =>
     sequelize.define("songs", {
         name: {
@@ -9,6 +7,9 @@ const songs = (sequelize, DataTypes) =>
             type: DataTypes.INTEGER,
         },
         artistId: {
+            type: DataTypes.INTEGER,
+        },
+        musiciansId: {
             type: DataTypes.INTEGER,
         },
     });
